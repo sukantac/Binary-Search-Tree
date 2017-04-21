@@ -22,6 +22,7 @@ function invertTree(root) {
             }
         }
     }
+    console.log(bst);
 }
 
 function hasNode(root) {
@@ -31,4 +32,3 @@ function hasNode(root) {
 
 
 }
-console.log(bst);
