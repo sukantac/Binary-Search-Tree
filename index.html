@@ -12,41 +12,48 @@
 </head>
 
 <body>
+
+    <input type="text" placeholder="your value" id="inpval" required />
+    <button onclick="valueInsert()">createTree</button>
+    <button class="btn btn-success" onclick="triggerInvert()">inverse the tree</button>
     <div class="container-fluid">
-        <input type="text" placeholder="your value" id="inpval" />
-
-        <button onclick="valueInsert()">createTree</button>
-        <button class="btn btn-success" onclick="triggerInvert()">inverse the tree</button>
-         <div class="row">
-           <div class="col-lg-6" >
-        <svg id="mySVG" height="600" width="1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="row">
+            <div class="col-lg-6">
+                <svg id="mySVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> </svg>
+            </div>
+            <div class="col-lg-6">
+                <svg id="mySecondSVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    </svg>
+            </div>
         </div>
-        <div class="col-lg-6">
-     <svg id="mySecondSVG" height="600" width="1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-     </div>
-    </svg>
-  </div>
-      </div>
-        <script src="js/line.js">
-        </script>
+    </div>
 
-        <script src="js/text.js">
-        </script>
+    <script src="js/line.js">
+    </script>
 
-        <script src="js/circle.js">
-        </script>
+    <script src="js/text.js">
+    </script>
 
-        <script src="js/bst.js">
-        </script>
+    <script src="js/circle.js">
+    </script>
 
-        <script src="js/inverse.js">
-        </script>
+    <script src="js/bst.js">
+    </script>
 
-        <script src="js/node.js">
-        </script>
+    <script src="js/inverse.js">
+    </script>
 
-        <script src="js/main.js">
-        </script>
+    <script src="js/node.js">
+    </script>
+
+    <script src="js/inversepaint.js">
+    </script>
+
+    <script src="js/main.js">
+    </script>
+
+
+
+
 </body>
 
 </html>
