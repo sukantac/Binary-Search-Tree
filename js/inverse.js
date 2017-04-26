@@ -8,13 +8,10 @@ function invertTree(root) {
             temp = root.left;
             root.left = root.right;
             root.right = temp;
-          
-
         }
         if (root.left !== null) {
             if (hasNode(root.left)) {
                 invertTree(root.left);
-
             }
         }
         if (root.right !== null) {
