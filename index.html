@@ -1,55 +1,62 @@
 <html>
 
 <head>
-    <title>Dynamic Vector Circle</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <title>Binary tree creation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <input type="text" placeholder="your value" id="inpval" required />
-    <button onclick="valueInsert()">createTree</button>
-    <button class="btn btn-success" onclick="triggerInvert()">inverse the tree</button>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6">
-                <svg id="mySVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> </svg>
-            </div>
-            <div class="col-lg-6">
-                <svg id="mySecondSVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    </svg>
-            </div>
-        </div>
+  <input type="text" placeholder="your value" id="inpval" />
+  <button onclick="valueInsert()" disabled="true" id="createtree" class="btn btn-primary">createTree</button>
+  <input type="text" placeholder="your value to search" id="searchbox" />
+  <button class="btn btn-info" onclick="search()" disabled="true">serch</button>
+
+  <button class="btn btn-success" onclick="triggerInvert()" disabled="true">inverse the tree</button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <svg id="mySVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> </svg>
+      </div>
+      <div class="col-lg-6">
+        <svg id="mySecondSVG" height="600" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    </svg>
+      </div>
     </div>
+  </div>
 
-    <script src="js/line.js">
-    </script>
+  <script src="js/line.js">
+  </script>
 
-    <script src="js/text.js">
-    </script>
+  <script src="js/text.js">
+  </script>
 
-    <script src="js/circle.js">
-    </script>
+  <script src="js/circle.js">
+  </script>
 
-    <script src="js/bst.js">
-    </script>
+  <script src="js/bst.js">
+  </script>
 
-    <script src="js/inverse.js">
-    </script>
+  <script src="js/inverse.js">
+  </script>
 
-    <script src="js/node.js">
-    </script>
+  <script src="js/node.js">
+  </script>
 
-    <script src="js/inversepaint.js">
-    </script>
+  <script src="js/search.js">
+  </script>
 
-    <script src="js/main.js">
-    </script>
+  <script src="js/inversepaint.js">
+  </script>
+
+  <script src="js/main.js">
+  </script>
 
 
 
