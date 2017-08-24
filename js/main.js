@@ -1,17 +1,18 @@
 //Tree Creation main part
- // var nodeValue = [];
 
 function valueInsert() {
   inputval = parseInt(document.getElementById("inpval").value, 10);
-  //  nodeValue.push(inputval);
   if (document.getElementById("inpval").value.length > 0) {
     bst.push(inputval);
     $(".btn-success").removeAttr('disabled');
 
   }
   if (document.getElementById("inpval").value.length == 0) {
-    alert("click will not fire");
-
+    swal({
+       title: 'oops',
+       text: 'please enter a value',
+       type: 'warning'
+    });
   }
   document.getElementById("inpval").value = "";
 
@@ -31,7 +32,12 @@ $("#inpval").keyup(function(event) {
     if ($("#inpval").val().length > 0) {
       $("#createtree").click();
     } else {
-      alert("please enter value");
+      $("#inpval").blur();
+      swal({
+         title: 'oops',
+         text: 'please enter a value',
+         type: 'warning'
+      });
     }
   }
 });
