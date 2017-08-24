@@ -1,18 +1,25 @@
 // for the searching part
 function search() {
   var searchval = parseInt(document.getElementById("searchbox").value, 10);
-  var arrayLength = nodeValue.length;
+  var arrayLength = nodeInfoArray.length;
   for (var k = 0; k < arrayLength; k++) {
-    if (searchval === nodeValue[k]) {
-      alert("found");
+    if (searchval === nodeInfoArray[k].val) {
+      // alert("found");
+      var n1 = new Circle(nodeInfoArray[k].xposition, nodeInfoArray[k].yposition, 25, "yellow", "mySVG", 0.6);
       break;
     }
+
+
   }
-  if (searchval !== nodeValue[k]) {
+   if(k==arrayLength){
+     k=k-1;
+  if (searchval !== nodeInfoArray[k].val) {
     alert("not found");
   }
+}
   document.getElementById("searchbox").value = "";
 
+  //console.log(nodeValue)
 }
 
 $("#searchbox").keyup(function() {

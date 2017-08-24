@@ -1,9 +1,9 @@
 //Tree Creation main part
-var nodeValue = [];
+ // var nodeValue = [];
 
 function valueInsert() {
   inputval = parseInt(document.getElementById("inpval").value, 10);
-  nodeValue.push(inputval);
+  //  nodeValue.push(inputval);
   if (document.getElementById("inpval").value.length > 0) {
     bst.push(inputval);
     $(".btn-success").removeAttr('disabled');
