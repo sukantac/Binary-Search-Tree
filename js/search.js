@@ -4,7 +4,6 @@ function search() {
   var arrayLength = nodeInfoArray.length;
   for (var k = 0; k < arrayLength; k++) {
     if (searchval === nodeInfoArray[k].val) {
-      // alert("found");
       var n1 = new Circle(nodeInfoArray[k].xposition, nodeInfoArray[k].yposition, 25, "yellow", "mySVG", 0.6);
       break;
     }
@@ -14,8 +13,12 @@ function search() {
    if(k==arrayLength){
      k=k-1;
   if (searchval !== nodeInfoArray[k].val) {
-    alert("not found");
-  }
+       $("#searchbox").blur();
+    swal({
+       title: 'sorry',
+       text: 'Your search did not find any match',
+       type: 'error'
+    });  }
 }
   document.getElementById("searchbox").value = "";
 
@@ -26,6 +29,10 @@ $("#searchbox").keyup(function() {
   if ($("#searchbox").val().length > 0) {
     $(".btn-info").removeAttr('disabled');
   }
+  if ($("#searchbox").val().length === 0) {
+    $(".btn-info").attr('disabled', 'true');
+
+  }
 
 });
 $("#searchbox").keyup(function(event) {
@@ -33,7 +40,12 @@ $("#searchbox").keyup(function(event) {
     if ($("#searchbox").val().length > 0) {
       $(".btn-info").click();
     } else {
-      alert("please enter value");
+        $("#searchbox").blur();
+      swal({
+         title: 'oops',
+         text: 'please enter a value',
+         type: 'warning'
+      });
     }
   }
 });
